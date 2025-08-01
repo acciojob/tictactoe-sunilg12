@@ -47,7 +47,7 @@ function renderBoard(){
 function handleMove(e) {
 	const id = e.target.id;
 
-	const mark = turn === 0 ? 'X' : 'O';
+	const mark = turn === 0 ? 'x' : 'o';
 	boardState[id-1] = mark;
 	e.target.innerText=mark;
 	e.target.classList.add('disabled');
