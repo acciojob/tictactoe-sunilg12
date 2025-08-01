@@ -15,8 +15,8 @@ const wins =[
 submit.addEventListener("click", startGame);
 
 function startGame(){
-	const p1 = document.getElementById("player-1").value.trim();
-	const p2 = document.getElementById("player-2").value.trim();
+	const p1 = document.getElementById("player1").value.trim();
+	const p2 = document.getElementById("player2").value.trim();
 
 	if(!p1 || !p2){
 		alert("please enter both names");
@@ -59,7 +59,7 @@ function handleMove(e) {
 		winningLine.forEach( i=> {
 			document.getElementById((i+1).toString()).classList.add("winner");
 		})
-        message.innerText=`${players[turn]} you're a winner`;
+        message.innerText=`${players[turn]} congratulations you won!`;
         return;
 
 	}
