@@ -68,7 +68,7 @@ function handleMove(e) {
 }
 
 function updateMessage() {
-	message.innerText=`${players[turn]} you're up`;
+	message.innerText=`${players[turn]}, you're up`;
 }
 
 
